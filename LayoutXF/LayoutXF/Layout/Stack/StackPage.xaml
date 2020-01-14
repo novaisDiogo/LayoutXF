@@ -7,9 +7,15 @@
              x:Class="LayoutXF.Layout.Stack.StackPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Padding="30" Margin="15, 5, 10, 20" Spacing="0" BackgroundColor="Red" Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <BoxView BackgroundColor="Green" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="Blue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <BoxView BackgroundColor="Green" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                <BoxView BackgroundColor="Blue" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            </StackLayout>
         </StackLayout>
+        
     </ContentPage.Content>
 </ContentPage>
