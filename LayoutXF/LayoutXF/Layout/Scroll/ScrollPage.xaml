@@ -6,10 +6,12 @@
              mc:Ignorable="d"
              x:Class="LayoutXF.Layout.Scroll.ScrollPage">
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView Orientation="Both">
+        <StackLayout WidthRequest="1000" HeightRequest="1000" BackgroundColor="Gray">
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -6,10 +6,11 @@
              mc:Ignorable="d"
              x:Class="LayoutXF.Layout.Relative.RelativePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <RelativeLayout>
+            <BoxView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=-50}" BackgroundColor="Blue"/>
+            <BoxView BackgroundColor="Red" Margin="200" WidthRequest="100" HeightRequest="100" x:Name="Vermelho"/>
+            <BoxView WidthRequest="100" HeightRequest="100" BackgroundColor="Green" RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Vermelho, Property=X, Factor=1, Constant=20}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=Vermelho, Property=Y, Factor=1,Constant=20}"/>
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
